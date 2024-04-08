@@ -1,0 +1,161 @@
+name: cisl-gpu-base
+channels:
+  - conda-forge
+  - pytorch
+  - rapidsai 
+  - nvidia
+dependencies:
+  # GPU/TensorFlow Specific Packages
+  - flax=0.6.1=pyhd8ed1ab_1
+  - jax=0.4.13=pyhd8ed1ab_0
+  - keras-cv=0.8.2=pyhd8ed1ab_0
+  - catboost=1.2.2=py311h38be061_0
+  - pyvista[all,trame]
+  - pyvista-xarray=0.1.5=pyhd8ed1ab_0
+  - tensorflow=2.13.1=cuda112py311h693fce6_1
+  - cudatoolkit=11.8.0=h4ba93d1_13
+  - cudnn=8.8.0.121=hcdd5f01_4
+  - cupy=13.0.0=py311h878bca4_3
+  - cuda-nvcc=11.3.58=h2467b9f_0
+  - rapids=0.0.1=pyh9f0ad1d_0
+  # CISL-Cloud-Base CPU packages
+  - argopy=0.1.14 
+  # Same version as NPL
+  - beautifulsoup4=4.12.2=pyha770c72_0
+  # Same version as NPL
+  - bokeh=3.1.1=pyhd8ed1ab_0
+  # Same version as NPL
+  - boto3=1.28.2=pyhd8ed1ab_0
+  # Same version as NPL
+  - ca-certificates=2023.7.22=hbcca054_0
+  # Same version as NPL
+  - cdsapi=0.6.1=pyhd8ed1ab_0
+  # Same version as NPL
+  - celluloid=0.2.0=pyhd8ed1ab_0
+  # Same version as NPL
+  - certifi=2023.7.22=pyhd8ed1ab_0
+  # Same version as NPL
+  - cfgrib=0.9.10.4=pyhd8ed1ab_0
+  # Same version as NPL
+  - cmocean=3.0.3=pyhd8ed1ab_0
+  # Not in NPL
+  - cryptography=41.0.7
+  # Same version as NPL
+  - dask
+  # Not included in NPL
+  - dask-gateway=2023.1.1=pyh8af1aa0_0
+  # Same version as NPL
+  - dask-jobqueue=0.8.2=pyhd8ed1ab_0
+  # Not included in NPL
+  - dask-ml=2023.3.24=pyhd8ed1ab_1
+  # Same version as NPL
+  - datashader=0.15.1=pyhd8ed1ab_0
+  # Same version as NPL
+  - descartes=1.1.0=py_4
+  # Same version as NPL
+  - docopt=0.6.2=py_1
+  # Not included in NPL
+  - erddapy=2.2.0=pyhd8ed1ab_0
+  # Same version as NPL
+  - esmpy=8.4.2=pyhc1e730c_1
+  # Same version as NPL
+  - flox=0.7.2=pyhd8ed1ab_0
+  # Same version as NPL
+  - folium=0.14.0=pyhd8ed1ab_0
+  # Same version as NPL
+  - geocat-comp=2023.06.1=pyha770c72_0
+  # Not included in NPL
+  - geopy=2.4.0
+  # Same version as NPL
+  - geoviews=1.10.0=pyhd8ed1ab_0
+  # Same version as NPL
+  - ghp-import=2.1.0=pyhd8ed1ab_0
+  # Same version as NPL
+  - globus-cli=3.15.0=pyhd8ed1ab_0
+  # Same version as NPL
+  - globus-sdk=3.21.0=pyhd8ed1ab_0
+  # Same version as NPL
+  - h5netcdf=1.2.0=pyhd8ed1ab_0
+  # Not included in NPL
+  - holoviews=1.18.1=pyhd8ed1ab_0
+  # Same version as NPL
+  - hvplot=0.8.4=pyhd8ed1ab_1
+  # Same version as NPL
+  - intake=0.7.0=pyhd8ed1ab_0
+  # Same version as NPL
+  - intake-esm
+  # Not included in NPL
+  - intake-thredds=2022.8.19=pyhd8ed1ab_0
+  # Same version as NPL
+  - intake-xarray=0.7.0=pyhd8ed1ab_0
+  # Same version as NPL in GitHub
+  - ipykernel=6.24.0=pyh71e2992_0
+  # Same version as NPL
+  - ipympl=0.9.3=pyhd8ed1ab_0
+  # Not included in NPL
+  - ipywidgets-bokeh=1.5.0
+  # Same version as NPL
+  - iris=3.6.1=pyha770c72_0
+  # Not included in NPL
+  - jupyter_bokeh=3.0.7
+  # Same version as NPL
+  - jupyter-book=0.15.1=pyhd8ed1ab_0
+  # Not included in NPL
+  - jupyter-panel-proxy=0.1.0
+  # Not included in NPL
+  - metpy=1.5.1=pyhd8ed1ab_0
+  - nbgitpuller=1.1.1
+  # Not included in NPL
+  - nbstripout=0.6.1=pyhd8ed1ab_0
+  # Same version as NPL
+  - nc-time-axis=1.4.1=pyhd8ed1ab_0
+  # Same version as NPL
+  - numcodecs
+  # Same version as NPL
+  - numpy
+  # Same version as NPL
+  - pandas
+  # Not included in NPL
+  - panel=1.2.3=pyhd8ed1ab_0
+  # Same version as NPL
+  - papermill=2.3.4=pyhd8ed1ab_0
+  # Same version as NPL
+  - pop-tools=2023.6.0=pyhd8ed1ab_0
+  # Same version as NPL
+  - pydap=3.4.0=pyhd8ed1ab_0
+  # Same version as NPL
+  - pylint=2.17.4=pyhd8ed1ab_0
+  # Same version as NPL
+  - pynco=1.1.0=pyhd8ed1ab_1
+  # Not included in NPL
+  - pystac=1.9.0=pyhd8ed1ab_0
+  # Not included in NPL
+  - pystac-client=0.7.5=pyhd8ed1ab_0
+  # Same version as NPL
+  - python
+  # Same version as NPL
+  - python-graphviz=0.20.1=pyh22cad53_0
+  # Same version as NPL
+  - python-wget=3.2=py_0
+  # Same version as NPL
+  - seaborn=0.12.2=hd8ed1ab_0
+  # Same version as NPL
+  - seawater=3.3.4=py_1
+  # Not included in NPL
+  - siphon=0.9=pyhd8ed1ab_2
+  # Removed to patch vulnerability
+#  - stackstac
+  # Same version as NPL
+  - tobac=1.4.2=pyhd8ed1ab_0
+  # Same version as NPL
+  - widgetsnbextension=4.0.8=pyhd8ed1ab_0
+  # Same version as NPL
+  - xarray=2023.6.0=pyhd8ed1ab_0
+  # Same version as NPL
+  - xesmf=0.7.1=pyhd8ed1ab_0
+  # Same version as NPL
+  - xgcm=0.8.1=pyhd8ed1ab_0
+  # Same version as NPL
+  - xrft=1.0.1=pyhd8ed1ab_0
+  # Same version as NPL
+  - zarr=2.15.0=pyhd8ed1ab_0
